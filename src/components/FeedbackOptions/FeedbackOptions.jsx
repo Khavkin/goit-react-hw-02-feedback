@@ -4,7 +4,7 @@ import { Options } from './FeedbackOptions.styled';
 
 export class FeedbackOptions extends Component {
   static propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    options: PropTypes.arrayOf(PropTypes.string.isRequired),
     onLeaveFeedback: PropTypes.func.isRequired,
   };
   render() {
