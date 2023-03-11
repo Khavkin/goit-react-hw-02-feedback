@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 export class Section extends Component {
   static defaultProps = { title: '' };
 
-  static propTypes = { title: PropTypes.string.isRequired };
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired,
+  };
   render() {
     return (
       <section>
